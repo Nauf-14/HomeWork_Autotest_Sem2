@@ -21,6 +21,7 @@ class CompositeRaceTest {
         allRaces.addRace(lightHumans);
 
         Race foundRace = allRaces.findRace("Light Humans");
+        //тут будет NULL, т.к. у Вас нет "Light Humans" Race
         assertNotNull(foundRace);
         assertEquals(lightHumans, foundRace);
     }
